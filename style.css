@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background: #dedede;
+    min-height: 500vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main__floating-title{
+    text-align: center;
+    background: pink;
+    font-size: 80px;
+    height:100px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    opacity:0.6;
+}
+.main__card-wrap{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+/*    flex-basis: 40;*/
+    position: absolute;
+}
+.main__top-bg{
+  height:250px;
+    width: 100vw;
+    background: blue;
+/*    position: fixed;*/
+}
+
+.main__card{
+    margin: 10px;
+    height: 300px;
+    width: 250px;
+    background: black;
+/*   position: absolute;*/
+    top: 20%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__photo{
+    margin: auto;
+}
+
+img{
+    border-radius: 50px;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+.card__notification{
+/*
+    display: flex;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: sp;
+*/
+    color:white;
+    text-align: center;
+    background-color: red;
+    position: relative;
+    top: -27px;
+    right: -65px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;   
+   font-size: 25px;
+}
+.card__name{
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card__name h2{
+    color: lightblue;
+    font-size: 15px;
+}
+.card__statistics{
+    margin: auto;
+    opacity: 30;
+    background: lightblue;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type:none;
+/*/   align-items: stretch;*/
+}
+.statistics__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+.item__number{
+    font-size: 30px;    
+}
+.card__cta-button{
+    margin: auto;
+    color: floralwhite;
+    border-style: solid;
+    padding: 5px;
+}
+}
